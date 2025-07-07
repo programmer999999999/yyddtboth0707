@@ -1,0 +1,106 @@
+/* General Styles */
+.center-text {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.return-link {
+    color: #4cc9f0;
+    text-decoration: none;
+}
+
+/* Issue Container */
+.issue-container {
+    margin-top: 40px;
+}
+
+/* Search Input */
+.search-container {
+    margin-top: 10px;
+}
+
+.search-input {
+    width: 100%;
+}
+
+/* Lottery Message */
+.lottery-message {
+    display: none;
+}
+
+/* Item Details Table */
+.item-details-cell {
+    padding: 0 !important;
+    vertical-align: top;
+}
+
+.item-details {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin: 0;
+    table-layout: fixed;
+}
+
+.item-details tr:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+.item-details td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    border: none;
+    line-height: 1.4;
+}
+
+/* Ensure the main table cells have proper spacing */
+.recharge-table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+/* Items Section */
+.items-section-desc {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.section-header-beginner {
+    color: #4cc9f0;
+    margin: 30px 0 20px;
+    border-bottom: 2px solid #4cc9f0;
+    padding-bottom: 5px;
+}
+
+.section-header-veteran {
+    color: #f72585;
+    margin: 40px 0 20px;
+    border-bottom: 2px solid #f72585;
+    padding-bottom: 5px;
+}
+
+/* Images */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Feedback Form */
+.feedback-form {
+    display: none;
+}
+
+.feedback-textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.feedback-list {
+    margin-top: 20px;
+}
+
+/* Buttons */
+.hidden-button {
+    display: none;
+}

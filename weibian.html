@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>烟雨弹弹堂微变版</title>
+    <link rel="icon" href="./downloads/profile/xiaohu.jpeg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleWB.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #a0a0d0, #a0a4b0);
+            /* background: linear-gradient(-45deg, #c084fc, #e9d5ff, #d8b4fe, #f5d0fe); */
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+    <link rel="stylesheet" href="lottery.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>欢迎来到烟雨微变版！</h1>
+        <div class="center-text">
+            <a href="index.html" class="return-link">← 返回超变版本</a>
+        </div>
+        <div class="game-link-container">
+            游戏入口：
+            <a href="http://202.189.7.96:3944/index.html" class="game-entry" target="_blank">🎮 点击进入游戏</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="tabs-container">
+            <button id="leftArrow" class="nav-arrow left-arrow" aria-label="Scroll left">❮</button>
+            <div class="tabs">
+                <button class="tab-button active" onclick="showTab('guide')">新人指南</button>
+                <button class="tab-button" onclick="showTab('question')">常见问题</button>
+                <button class="tab-button recharge-button" onclick="showTab('recharge')">💝 充值配套 💝</button>
+                <!-- <button class="tab-button account-button" onclick="showTab('account')">💰 买卖账号 💰</button> -->
+                <!-- <button class="tab-button pvp-button" onclick="showTab('event')">🔥 PVP 激战进行中 🔥</button> -->
+                <button class="tab-button contact-button" onclick="showTab('contact')">📞 联系我们 📞</button>
+                <button class="tab-button" onclick="showTab('items')">装备和系统讲解</button>
+                <button class="tab-button" onclick="showTab('updates')">更新预告</button>
+                <!-- <button class="tab-button" onclick="showTab('zhanlipinzheng')">战力凭证</button> -->
+                <!-- <button class="tab-button lottery-button" onclick="showTab('lottery')">🎉 抽奖证明 🎉</button> -->
+            </div>
+            <button class="nav-arrow right-arrow" aria-label="Scroll right">❯</button>
+        </div>
+
+        <div id="guide" class="tab-content active">
+            <div class="section">
+                <h2>新人指南</h2>
+                <ul>
+                    <li>🔗手动打开链接：<a href="http://202.189.7.96:3944/index.html" target="_blank">http://202.189.7.96:3944/</a></li>
+                    <li>1. 弹弹堂需要 Flash Center：<a href="https://www.flash.cn/" target="_blank">flash.cn</a></li>
+                    <li>2. 推荐浏览器：
+                        <ul>
+                            <li>🍬 糖果浏览器：<a href="http://youxi.tg1234.com/index.html" target="_blank">点击访问</a></li>
+                            <li>⚡ Flash 浏览器：<a href="https://browser.flash.cn/" target="_blank">点击访问</a></li>
+                            <li>🌐 UC 浏览器：<a href="https://ucbrowser.in/pc/" target="_blank">点击访问</a></li>
+                        </ul>
+                    </li>
+                    <li>3. 马来西亚用户如遇问题，建议使用 VPN：
+                        <ul>
+                            <li>🦊 Quick Fox 加速器：<a href="https://www.quick-fox.com/en-US" target="_blank">下载加速器</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>4. 手机 & 电脑远程控制：
+                        <ul>
+                            <li>🌻 向日葵远控：<a href="https://sunlogin.oray.com/" target="_blank">点击下载</a></li>
+                            <li>📱 Puffin 浏览器（手机上玩）：<a href="https://www.puffin.com/" target="_blank">点击了解</a></li>
+                        </ul>
+                    </li>
+                    <li>5. 新手福利和路费：
+                        <ul>
+                            <li>🎁 注册账号后，登入游戏，系统将自动发放😍</li>
+                            <li>🎉 看任务和精彩活动</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 id="script-download">脚本下载</h2>
+                <ul>
+                    <li>使用电脑打开：<a href="./downloads/script/弹弹堂3私服脚本.exe" download>弹弹堂3私服脚本</a></li>
+                    <li>FLASH安装教学：<a href="./downloads/script/scriptHelper2.jpeg" target="_blank">点击观看</a></li>
+                    <li>一键全清：<a href="./downloads/script/AdobeFlashPlayer一剑全清.exe" download>点击下载</a></li>
+                    <li>ActiveX：<a href="./downloads/script/FlashPlayerActiveX_Final.exe" download>点击下载</a></li>
+                    <li>NPAPI：<a href="./downloads/script/FlashPlayerNPAPI_Final.exe" download>点击下载</a></li>
+                    <li>PPAPI：<a href="./downloads/script/FlashPlayerPPAPI_Final.exe" download>点击下载</a></li>
+                    <li>系统语言设置：<a href="./downloads/script/systemLanguage.jpeg" target="_blank">点击观看</a></li>
+                </ul>
+            </div>
+
+            <div class="section downloads">
+                <h2>新手资料下载</h2>
+                <a href="./downloads/微变新手指导篇.pdf" target="_blank">📘 新手指导篇</a>
+                <a href="./downloads/装扮ID查询及命令说明.pdf" target="_blank">👔 装扮ID查询及命令说明</a>
+                <!-- <a href="./downloads/(新手必看)副本速通攻略.pdf" target="_blank">📕 (新手必看)副本速通攻略</a>
+                <a href="./downloads/(新手必看)新手速通攻略.pdf" target="_blank">📘 (新手必看)新手速通攻略</a> -->
+            </div>
+        </div>
+
+        <div id="question" class="tab-content">
+            <div class="section">
+                <h2>常见问题</h2>
+                
+                <!-- Quick Navigation Menu -->
+                <div class="quick-nav">
+                    <div class="search-container">
+                        <h3>快速导航：</h3>
+                        <input type="text" id="navSearch" placeholder="输入关键词搜索..." class="search-input">
+                    </div>
+                    <div class="nav-links">
+                        <a href="javascript:void(0);" data-issue="issue1" class="nav-link">黑屏问题</a>
+                        <a href="javascript:void(0);" data-issue="issue2" class="nav-link">无法点击"允许"</a>
+                        <a href="javascript:void(0);" data-issue="issue6" class="nav-link">找不到验证码</a>
+                        <a href="javascript:void(0);" data-issue="issue3" class="nav-link">脚本无法开启</a>
+                        <a href="javascript:void(0);" data-issue="issue4" class="nav-link">脚本语言问题</a>
+                        <a href="javascript:void(0);" data-issue="issue5" class="nav-link">Flash问题</a>
+                    </div>
+                </div>
+                
+                <div id="issue1" class="issue-container">
+                    <h3>黑屏问题</h3>
+                    
+                    <div class="issue-images">
+                        <div class="image-pair">
+                            <div class="image-container">
+                                <img src="./downloads/issues/issue1image1.jpeg" alt="白屏问题示例" class="issue-image">
+                                <p class="image-caption">常见黑屏问题</p>
+                            </div>
+                            <div class="image-container">
+                                <img src="./downloads/issues/issue1image2.jpeg" alt="黑屏问题示例" class="issue-image">
+                                <p class="image-caption">常见黑屏问题</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>解决方法：</h4>
+                        <ol>
+                            <li>清理浏览器缓存：
+                                <a href="./downloads/clearCache.jpeg" target="_blank" class="solution-link">查看清理缓存教程</a>
+                            </li>
+                            <li>如果问题依旧，请访问：
+                                <a href="http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html" 
+                                   target="_blank" 
+                                   class="solution-link">
+                                   用什么浏览器玩弹弹堂就用什么浏览器打开
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Second Issue -->
+                <div id="issue2" class="issue-container">
+                    <h3>无法点击"允许"</h3>
+                    
+                    <div class="issue-images">
+                        <div class="image-pair">
+                            <div class="image-container">
+                                <img src="./downloads/issues/issue2image1.jpeg" alt="无法点击允许问题" class="issue-image">
+                                <p class="image-caption">无法点击"允许"问题</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>解决方法：</h4>
+                        <ol>
+                            <li>调整系统分辨率：
+                            <a href="./downloads/issues/issue2answer1.jpeg" target="_blank" class="solution-link">点击查看解决方案</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Third Issue -->
+                <div id="issue3" class="issue-container">
+                    <h3>脚本无法开启</h3>
+                    
+                    <div class="issue-images">
+                        <div class="image-pair">
+                            <div class="image-container">
+                                <img src="./downloads/issues/issue3image1.jpeg" alt="脚本无法开启问题" class="issue-image">
+                                <p class="image-caption">脚本无法开启问题</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>解决方法：</h4>
+                        <ol>
+                            <li>关闭实时保护：
+                                <a href="./downloads/issues/issue3answer1.jpeg" target="_blank" class="solution-link">关闭防火墙教程</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Fourth Issue -->
+                <div id="issue4" class="issue-container">
+                    <h3>脚本语言问题</h3>
+                    
+                    <div class="issue-images">
+                        <div class="image-pair">
+                            <div class="image-container">
+                                <img src="./downloads/issues/issue4image1.jpeg" alt="脚本语言问题示例1" class="issue-image">
+                                <p class="image-caption">脚本语言问题示例1</p>
+                            </div>
+                            <div class="image-container">
+                                <img src="./downloads/issues/issue4image2.jpeg" alt="脚本语言问题示例2" class="issue-image">
+                                <p class="image-caption">脚本语言问题示例2</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>解决方法：</h4>
+                        <ol>
+                            <li>下载并安装语言模拟器：
+                                <a href="./downloads/issues/Locale.Emulator.2.5.0.1.zip" class="solution-link">Locale.Emulator 2.5.0.1</a>
+                            </li>
+                            <li>步骤一：
+                                <a href="./downloads/issues/issue4answer1.jpeg" target="_blank" class="solution-link">点击查看</a>
+                            </li>
+                            <li>步骤二：
+                                <a href="./downloads/issues/issue4answer2.jpeg" target="_blank" class="solution-link">点击查看</a>
+                            </li>
+                            <li>步骤三：
+                                <a href="./downloads/issues/issue4answer3.mp4" target="_blank" class="solution-link">点击观看视频</a>
+                            </li>
+                        </ol>
+                        <br>
+                        <h4>若没有脚本：<a href="#" onclick="showTab('guide'); document.querySelector('#script-download').scrollIntoView({ behavior: 'smooth' }); return false;" class="section">点击这里</a></h4>
+                    </div>
+                </div>
+
+                <!-- Flash Issue -->
+                <div id="issue5" class="issue-container">
+                    <h3>Flash问题</h3>
+                    
+                    <div class="issue-images">
+                        <div class="image-pair">
+                            <div class="image-container">
+                                <img src="./downloads/issues/issue5image1.jpeg" alt="Flash问题示例" class="issue-image">
+                                <p class="image-caption">Flash问题示例</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>解决方法：</h4>
+                        <ol>
+                            <li>Quick Fox 加速器：
+                                <a href="https://www.quick-fox.com/en-US" target="_blank" class="solution-link">点击下载</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div id="issue6" class="issue-container">
+                    <h3>找不到验证码</h3>
+                    
+                    <div class="issue-images">
+                        <div class="image-pair">
+                            <div class="image-container">
+                                <img src="./downloads/issues/issue6image1.jpeg" alt="找不到验证码示例" class="issue-image">
+                                <p class="image-caption">示例</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>解决方法：</h4>
+                        <ol>
+                            <li>查看上面截图
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>            
+            <!-- <div class="section">
+                <h3>更多常见问题</h3>
+                <p>如果以上方法无法解决您的问题，请查看：</p>
+                <a href="./downloads/常见问题.pdf" target="_blank" class="button">📚 完整常见问题文档</a>
+            </div> -->
+        </div>
+
+        <div id="recharge" class="tab-content">
+            <div class="section">
+                <div class="recharge-person">
+                    <div class="wechat-contact">
+                        充值请联系微信：<span class="wechat-id" data-img="./downloads/profile/huWechatQR.jpeg">huyb1021</span>
+                    </div>
+                    <div class="payment-options">
+                        充值付款方式：
+                        <span class="scan-qr wechat-pay" data-img="./downloads/profile/huWechatPayQR.jpeg">微信支付</span>
+                        <span class="scan-qr alipay" data-img="./downloads/profile/huZfbPayQR.jpeg">支付宝</span>
+                    </div>
+                    <div class="payment-reminder">
+                        (请先私信小胡确认收款人姓名，确保无误后，再进行充值)
+                    </div>
+                </div>
+
+                <h2 id="recharge1">后期移入下面的充值表：<a href="./downloads/wbTopUp.jpeg" target="_blank">点击观看懒人包</a></h2>
+                <div class="image-container">
+                    <!-- <img src="./downloads/wbTopUp.jpeg" alt="微变充值表" class="recharge-image"> -->
+                </div>
+
+                <!-- Quick Navigation Menu -->
+                <div class="quick-nav">
+                    <div class="search-container">
+                        <h3>快速导航：</h3>
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="搜索道具名称或描述..." class="search-input">
+                        </div>
+                    </div>
+                    <div class="nav-links">
+                        <!-- <a href="javascript:void(0);" data-wb-target="recharge1" class="nav-link special-recommend">懒人包</a>
+                        <a href="javascript:void(0);" data-wb-target="recharge2" class="nav-link">道具兑换</a> -->
+                        <a href="javascript:void(0);" onclick="scrollToItem('弹弹大礼兑换券')" class="nav-link">弹弹大礼兑换券</a>
+                        <a href="javascript:void(0);" onclick="scrollToItem('许愿卡')" class="nav-link">许愿卡</a>
+                        <a href="javascript:void(0);" onclick="scrollToItem('小月卡兑换券')" class="nav-link">月卡</a>
+                        <a href="javascript:void(0);" onclick="scrollToItem('1R每日特惠礼包')" class="nav-link">每日礼包</a>
+                        <a href="javascript:void(0);" onclick="scrollToItem('5星圣灵礼盒')" class="nav-link">圣灵</a>
+                        <a href="javascript:void(0);" onclick="scrollToItem('黯炎魔虎')" class="nav-link special-recommend">宠物</a>
+                        <a href="javascript:void(0);" onclick="scrollToItem('定制刻印豪礼')" class="nav-link">定制刻印</a>
+                        <a href="javascript:void(0);" onclick="scrollToItem('战神河修觉醒礼盒')" class="nav-link">觉醒礼盒</a>
+                        <a href="javascript:void(0);" onclick="scrollToItem('炽天使宝珠')" class="nav-link">炽天使宝珠</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section downloads">
+                <h2 id="recharge2">充值列表</h2>
+                <div class="table-container">
+                    <table class="recharge-table">
+                        <thead>
+                            <tr>
+                                <th>道具名称</th>
+                                <th>描述</th>
+                                <th>缘分</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>弹弹大礼兑换券</td>
+                                <td>累计购买9天可获得5星黯炎魔虎!</td>
+                                <td>10RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>许愿卡</td>
+                                <td>获取传奇圣物的必要抽奖券</td>
+                                <td>1RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>1R每日特惠礼包</td>
+                                <td>点券x300万、经验珠x1000、黑曜石x500、修炼重置券x1</td>
+                                <td>1RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>5R每日特惠礼包</td>
+                                <td>点券x500万、经验珠x5000、黑曜石x1500、修炼重置券x2</td>
+                                <td>5RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>10R每日特惠礼包</td>
+                                <td>点券x800万、经验珠x10000、黑曜石x3000、修炼重置券x3</td>
+                                <td>10RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>小月卡兑换券</td>
+                                <td>使用后可以激活小月卡有效期：31天。<br>
+                                    每日奖助：点券X80万、迷宫宝藏券X300<br>
+                                    强化石5级X15、神恩符X5<br>
+                                    顶级坐骑图鉴碎片自选礼盒X4</td>
+                                <td>36RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>大月卡兑换券</td>
+                                <td>使用后可以激活大月卡有效期：31天。<br>
+                                    每日奖构：点券X120万、迷宫宝藏券X500<br>
+                                    强化石5级X30、神恩符X10<br>
+                                    至尊坐骑图鉴碎片自选礼盒X4</td>
+                                <td>98RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>双月卡兑换券</td>
+                                <td>使用后可以激活大小月卡有效期分别：31天。<br>
+                                    额外附送：顶级坐骑图鉴自选礼盒X1<br>
+                                    鸿运当头称号卡X1（+120四维）</td>
+                                <td>128RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>双月卡兑换券（季度）</td>
+                                <td>使用后可以激活大小月卡有效期分别：124天。<br>
+                                    额外附送：至尊坐骑图鉴自选礼盒X1<br>
+                                    专属武神套装（四维+198）<br>
+                                    荣耀专属-王者无敌称号卡X1（四维+398）</td>
+                                <td>388RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>5星圣灵礼盒</td>
+                                <td>自选5星圣灵（不含光暗〉</td>
+                                <td>258RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>传说灵宝礼嵞</td>
+                                <td>自选传说灵宝（不含光暗专属）</td>
+                                <td>368RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>圣灵大礼包</td>
+                                <td>自选5星圣灵+自选传说灵宝<br>
+                                    额外赠送：资质成长丹X100<br>
+                                    高级灵果X15000、圣灵技能书X30</td>
+                                <td>520RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>定制刻印豪礼</td>
+                                <td>攻击+1041<br>
+                                    防御+1041<br>
+                                    教捷+1041<br>
+                                    幸运+1041<br>
+                                    魔攻+1041<br>
+                                    伤害+166</td>
+                                <td>38RMB/1颗<br>
+                                    不包5星
+                                </td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>定制刻印豪礼</td>
+                                <td>以上为各位定制刻印5星+0基础属性展示<br>
+                                    Ps：基础1-5星属性有差距，该商品不包含魂晶满级</td>
+                                <td>1288RMB/全套<br>
+                                    全身包5星刻印
+                                </td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>黯炎魔虎</td>
+                                <td>5星黯炎魔虎，赠洗髓丹X5000</td>
+                                <td>200RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>冰魄战龙</td>
+                                <td>5星冰魄战龙，赠洗髓丹X5000</td>
+                                <td>200RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>烈焰凤凰</td>
+                                <td>5星烈焰凤凰，赠洗髓丹X5000</td>
+                                <td>200RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>战神河修</td>
+                                <td>5星战神河修，赠洗髓丹X5000</td>
+                                <td>200RMB</td>
+                            </tr>
+                            <!-- <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>冰魄战龙</td>
+                                <td>5星冰魄战龙，赠洗髓丹X5000</td>
+                                <td>200RMB</td>
+                            </tr> -->
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>【传说】<br>卡布奇洛</td>
+                                <td>
+                                    专属外壳武器<br>
+                                    属性：四维+588<br>
+                                    专属技能：每回合恢复8%最大生命值<br>集齐四件可融合
+                                </td>
+                                <td>188RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>【传说】<br>
+                                    女王暴怒</td>
+                                    <td>
+                                        专属外壳武器<br>
+                                        属性：四维+588<br>
+                                        专属技能：基础伤塞+12%<br>集齐四件可融合
+                                    </td>
+                                <td>188RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>【传说】<br>
+                                    奇异灵果</td>
+                                    <td>
+                                        专属外壳武器<br>
+                                        属性：四维+588<br>
+                                        专属技能：基础速度+20%<br>集齐四件可融合
+                                    </td>
+                                <td>188RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>【传说】<br>
+                                    弱点打击</td>
+                                    <td>
+                                        专属外壳武器<br>
+                                        属性：四维+588<br>
+                                        专属技能：基础暴击率+12%<br>集齐四件可融合
+                                    </td>
+                                <td>188RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>【至臻】<br>
+                                    究极融合</td>
+                                    <td>
+                                        专属融合外壳武器<br>
+                                        融合四狆【传说】外壳技能<br>
+                                        赋予最强副本翻牌效果：21翻牌<br>
+                                        Ps：请先收集以上元神才可融合
+                                    </td>
+                                <td>288RMB/次</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>战神河修觉醒礼盒</td>
+                                <td>觉醒石•战神阿修X200、精致牛头斧×200<br>
+                                    不够再补，补满为止</td>
+                                <td>500RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>功夫大师觉醒礼盒</td>
+                                <td>觉醒石•功夫大师X200、精致牛头斧×200<br>
+                                    不够再补，补满为止
+                                </td>
+                                <td>500RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>烈焰凤凰觉醒礼盒</td>
+                                <td>觉醒石•烈焰凤凰×200、精致牛头斧×200<br>
+                                    不够再补，补满为止</td>
+                                <td>500RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>战魄冰龙觉醒礼盒</td>
+                                <td>觉醒石•战魄冰龙X200、精致牛头斧×200<br>
+                                    不够再补，补满为止</td>
+                                <td>500RMB</td>
+                            </tr>
+                            <tr class="clickable-row" data-qr="./downloads/profile/unknownQR.jpeg">
+                                <td>炽天使宝珠</td>
+                                <td>128伤甲属性宝珠<br>
+                                    可通过宝珠进阶升阶为神•炽天使（286伤甲）</td>
+                                <td>50RMB/1个<br>
+                                    400RMB/9个
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <style>
+                    .search-container {
+                        margin: 15px 0;
+                        display: flex;
+                        gap: 10px;
+                    }
+                    .search-input {
+                        flex: 1;
+                        padding: 8px 12px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        font-size: 14px;
+                    }
+
+                    .table-container {
+                        width: 100%;
+                        overflow-x: auto;
+                        margin: 20px 0;
+                        font-family: 'Segoe UI', 'Microsoft YaHei', 'PingFang SC', 'Microsoft JhengHei', 'Source Han Sans', 'Noto Sans', sans-serif;
+                    }
+                    .recharge-table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin: 15px 0;
+                        font-size: 15px;
+                        font-weight: 400;
+                        letter-spacing: 0.3px;
+                        line-height: 1.5;
+                        min-width: 600px;
+                        background-color: #2c3e50;
+                        color: #ecf0f1;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    }
+                    .recharge-table th {
+                        background-color: #e74c3c;
+                        color: white;
+                        padding: 12px 15px;
+                        text-align: left;
+                    }
+                    .recharge-table td {
+                        padding: 12px;
+                        border-bottom: 1px solid #e0e0e0;
+                        vertical-align: top;
+                    }
+                    
+                    .item-detail {
+                        padding: 8px 0;
+                        border-bottom: 1px solid #e0e0e0;
+                    }
+                    
+                    .item-detail:last-child {
+                        border-bottom: none;
+                    }
+                    .recharge-table tbody tr:hover {
+                        background-color: #34495e;
+                        cursor: pointer;
+                    }
+                    .clickable-row {
+                        transition: background-color 0.2s;
+                    }
+                    .clickable-row:active {
+                        background-color: #2c3e50;
+                        transform: scale(0.99);
+                    }
+                    .highlight-row {
+                        background-color: #FFD700 !important; /* Golden yellow */
+                        color: #000 !important; /* Dark text for better contrast */
+                        transition: background-color 0.5s ease-in-out;
+                        animation: highlightPulse 2s ease-in-out infinite;
+                    }
+                    @keyframes highlightPulse {
+                        0% { background-color: #FFD700; }
+                        50% { background-color: #FFA500; } /* Darker orange */
+                        100% { background-color: #FFD700; }
+                    }
+                    .recharge-table tbody tr:last-child td {
+                        border-bottom: none;
+                    }
+                </style>
+                <script>
+                    // Function to scroll to specific item in the recharge table
+                    function scrollToItem(itemName) {
+                        const rows = document.querySelectorAll('.recharge-table tbody tr');
+                        for (const row of rows) {
+                            const nameCell = row.cells[0];
+                            if (nameCell && nameCell.textContent.trim() === itemName) {
+                                // Reset all highlights first
+                                document.querySelectorAll('.highlight-row').forEach(el => {
+                                    el.classList.remove('highlight-row');
+                                });
+                                
+                                // Add highlight class to target row
+                                row.classList.add('highlight-row');
+                                
+                                // Scroll to the row
+                                row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                
+                                // Remove highlight after 3 seconds
+                                setTimeout(() => {
+                                    row.classList.remove('highlight-row');
+                                }, 3000);
+                                
+                                break;
+                            }
+                        }
+                    }
+
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const searchInput = document.getElementById('searchInput');
+                        const searchBtn = document.getElementById('searchBtn');
+                        const resetBtn = document.getElementById('resetBtn');
+                        const tableRows = document.querySelectorAll('.recharge-table tbody tr');
+                        let searchTimeout;
+                        
+                        function filterTable() {
+                            const searchTerm = searchInput.value.trim().toLowerCase();
+                            
+                            if (searchTerm === '') {
+                                resetTable();
+                                return;
+                            }
+                            
+                            tableRows.forEach(row => {
+                                const name = row.cells[0].textContent.toLowerCase();
+                                const description = row.cells[1].textContent.toLowerCase();
+                                
+                                if (name.includes(searchTerm) || description.includes(searchTerm)) {
+                                    row.style.display = '';
+                                } else {
+                                    row.style.display = 'none';
+                                }
+                            });
+                        }
+                        
+                        function resetTable() {
+                            searchInput.value = '';
+                            tableRows.forEach(row => {
+                                row.style.display = '';
+                            });
+                        }
+                        
+                        // Real-time search with debounce
+                        searchInput.addEventListener('input', function() {
+                            clearTimeout(searchTimeout);
+                            searchTimeout = setTimeout(filterTable, 300); // 300ms delay
+                        });
+                        
+                        // Reset search when input is empty
+                        searchInput.addEventListener('input', function() {
+                            if (!this.value.trim()) {
+                                resetTable();
+                            }
+                        });
+
+                        // Make table rows clickable to show QR code
+                        document.querySelectorAll('.clickable-row').forEach(row => {
+                            row.addEventListener('click', function() {
+                                const qrCodePath = this.getAttribute('data-qr');
+                                showImageInModal(qrCodePath, this.cells[0].textContent);
+                            });
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+
+        <!-- 买卖账号 Tab -->
+        <div id="account" class="tab-content">
+            <div class="section">
+                <h2>买卖账号需知</h2>
+                <div class="account-reminder">
+                    (服主抽成累充百分之十，改密码+10元)
+                </div>
+                <div class="account-reminder">
+                    (私下交易不承认，改密码一样收累充百分之十)
+                </div>
+                <div class="payment-reminder">
+                    (若有意卖号，请提交账号截图与价格给管理员，稍后会更新在网页里)
+                </div>
+                <div class="payment-reminder">
+                    (若有意买号截图至群里，会有专人协助)
+                </div>
+            </div>
+
+            <div id="account1" class="account-container">
+                <h3>账号一：测试 (RMB 5000)</h3>
+                
+                <div class="account-images">
+                    <div class="account-image-pair">
+                        <div class="account-image-container">
+                            <img src="./downloads/issues/issue1image1.jpeg" alt="四维图" class="account-image">
+                            <p class="account-image-caption">四维图</p>
+                        </div>
+                        <div class="account-image-container">
+                            <img src="./downloads/issues/issue1image1.jpeg" alt="仓库截图1" class="account-image">
+                            <p class="account-image-caption">仓库截图1</p>
+                        </div>
+                        <div class="account-image-container">
+                            <img src="./downloads/issues/issue1image1.jpeg" alt="仓库截图2" class="account-image">
+                            <p class="account-image-caption">仓库截图2</p>
+                        </div>
+                        <div class="account-image-container">
+                            <img src="./downloads/issues/issue1image1.jpeg" alt="仓库截图3" class="account-image">
+                            <p class="account-image-caption">仓库截图3</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="account-feature">
+                    <h4>账号重点：</h4>
+                    <ol>
+                        <li>我很牛逼</li>
+                        <li>通关噩梦</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- 抽奖证明 Tab -->
+        <div id="lottery" class="tab-content">
+            <div class="section">
+                <h2>抽奖证明提交</h2>
+                <div id="lottery-message" class="lottery-message"></div>
+                
+                <form id="lotteryForm" class="lottery-form">
+                    <div class="form-group">
+                        <label for="lottery-username">游戏昵称: <span class="required">*</span></label>
+                        <input type="text" id="lottery-username" name="username" required 
+                               maxlength="20" placeholder="请输入您的游戏昵称">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lottery-image1">抽奖证明截图1: <span class="required">*</span></label>
+                        <input type="file" id="lottery-image1" name="image1" accept="image/*" required>
+                        <p class="help-text">请上传第一张抽奖证明截图 (必填)</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lottery-image2">抽奖证明截图2:</label>
+                        <input type="file" id="lottery-image2" name="image2" accept="image/*">
+                        <p class="help-text">可选的第二张截图 (选填)</p>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">提交证明</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="updates" class="tab-content">
+            <div class="section downloads">
+                <h2>更新公告</h2>
+                <li>更新公告完善中...</li>
+                <br>
+            </div>
+        </div>
+
+        <div id="items" class="tab-content">
+            <div class="section">
+                <h2>游戏物品</h2>
+                <p class="items-section-desc">测试中</p>
+                
+                <h3 class="section-header-beginner">物品区域1</h3>
+                <div class="items-grid">
+                    <!-- Item 1 -->
+                    <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品1" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 1</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品2" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 2</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品3" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 3</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品4" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 4</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品5" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 5</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 6 -->
+                    <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品6" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 6</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+
+                     <!-- Item 7 -->
+                     <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品7" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 7</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+
+                     <!-- Item 8 -->
+                     <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品8" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 8</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+
+                     <!-- Item 9 -->
+                     <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品9" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 9</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 10 -->
+                    <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品10" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 10</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 11 -->
+                    <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品11" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 11</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 12 -->
+                    <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品12" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 12</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-header-veteran">物品区域2</h3>
+                <div class="items-grid">
+                    <!-- Item 13 -->
+                    <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品13" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 13</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 14 -->
+                    <div class="item-card">
+                        <img src="./downloads/profile/unknownQR.jpeg" alt="物品14" class="item-image">
+                        <div class="item-details">
+                            <h3>物品名称 14</h3>
+                            <p><strong>用处：</strong>充值</p>
+                            <p><strong>如何获得：</strong>充值</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        // Mobile touch handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.item-card');
+            
+            // Add touch event for mobile
+            items.forEach(item => {
+                item.addEventListener('touchstart', function(e) {
+                    // Prevent default to avoid double-tap zoom
+                    e.preventDefault();
+                    
+                    // Toggle active state
+                    items.forEach(i => {
+                        if (i !== this) i.classList.remove('mobile-active');
+                    });
+                    this.classList.toggle('mobile-active');
+                });
+            });
+            
+            // Close when clicking outside on mobile
+            document.addEventListener('touchstart', function(e) {
+                if (!e.target.closest('.item-card')) {
+                    items.forEach(item => {
+                        item.classList.remove('mobile-active');
+                    });
+                }
+            });
+        });
+        </script>
+
+        <div id="event" class="tab-content">
+            <div class="section">
+                <h2>烟雨弹弹堂 第二届 PVP (2vs2) 大赛</h2>
+                <li>6月30日开始比赛，每组选手必须在48小时内完成比赛，否则视为弃权</li>
+                <li>选手名单和队伍：<a href="./downloads/pvp2vs2list.jpeg" target="_blank" class="image-link">点击观看</a></li>
+                <br><br>
+                <img src="./downloads/pvp2vs2.jpeg" alt="PVP图片" class="responsive-image" />
+                <br>
+            </div>
+
+            <div class="section downloads">
+                <h2>烟雨弹弹堂 第二届 PVP (1vs1) 大赛</h2>
+                <li>恭喜图图堡、蛙蛙、小艺同学获得第二届pvp单人赛前三，可以额外获得一次宠物外观更换机会，其余奖励，6月25日前完成制作发放</li>
+                <br><br>
+                <img src="./downloads/pvp1vs1.jpeg" alt="PVP图片" class="responsive-image" />
+                <br>
+            </div>
+        </div>
+
+        <div id="contact" class="tab-content">
+            <div id="contact-owner" class="section">
+                <h2>烟雨微变服管理人员</h2>
+                <div class="profile-grid">
+                    <!-- Contact 1 -->
+                    <div class="profile-rectangle">
+                        <div id="contact-newbie" class="profile-header">
+                            <div class="profile-avatar">
+                                <img src="./downloads/profile/xiaohu.jpeg" alt="服主" data-qr="./downloads/profile/huWechatQR.jpeg" class="clickable-avatar">
+                            </div>
+                            <div class="profile-title">
+                                <h3>胡总 (小胡同志)</h3>
+                                <div class="profile-tags">
+                                    <span class="tag owner">服主</span>
+                                    <span class="tag clickable" onclick="showTab('recharge')">充值找他</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <span class="detail-label">微信</span>
+                                <span class="detail-value">huyb1021</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">QQ</span>
+                                <span class="detail-value">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact 2 -->
+                    <div class="profile-rectangle">
+                        <div class="profile-header">
+                            <div class="contact-group">
+                                <div class="profile-avatar">
+                                    <img src="./downloads/profile/wbWcGroup.jpeg" alt="WeChat Group">
+                                </div>
+                                <div class="profile-title">
+                                    <h3>微信群</h3>
+                                    <div class="profile-tags">
+                                        <span class="tag qr">点击放大</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-group">
+                                <div class="profile-avatar">
+                                    <img src="./downloads/profile/qqGroup.jpeg" alt="QQ Group">
+                                </div>
+                                <div class="profile-title">
+                                    <h3>QQ群</h3>
+                                    <div class="profile-tags">
+                                        <span class="tag qr">点击放大</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact 3 -->
+                    <div class="profile-rectangle">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <img src="./downloads/profile/baiqian.jpeg" alt="Staff 3" class="clickable-avatar" data-qr="./downloads/profile/unknownQR.jpeg">
+                            </div>
+                            <div class="profile-title">
+                                <h3>白浅</h3>
+                                <div class="profile-tags">
+                                    <span class="tag newbie">有待宣布</span>
+                                    <span class="tag sendZhanLi">等等</span>
+                                    <span class="tag huoDong">等等</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <span class="detail-label">微信</span>
+                                <span class="detail-value">群里查找</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">QQ</span>
+                                <span class="detail-value">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact 4 -->
+                    <div class="profile-rectangle">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <img src="./downloads/profile/zhaoPingZhong.jpeg" alt="Staff 4" class="clickable-avatar" data-qr="./downloads/profile/unknownQR.jpeg">
+                            </div>
+                            <div class="profile-title">
+                                <h3>等等</h3>
+                                <div class="profile-tags">
+                                    <span class="tag newbie">等等</span>
+                                    <span class="tag sendZhanLi">等等</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <span class="detail-label">微信</span>
+                                <span class="detail-value">群里查找</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">QQ</span>
+                                <span class="detail-value">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact 5 -->
+                    <div class="profile-rectangle">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <img src="./downloads/profile/zhaoPingZhong.jpeg" alt="Staff 5" class="clickable-avatar" data-qr="./downloads/profile/unknownQR.jpeg">
+                            </div>
+                            <div class="profile-title">
+                                <h3>等等</h3>
+                                <div class="profile-tags">
+                                    <span class="tag sendNewbieCard">等等</span>
+                                    <span class="tag sendZhanLi">等等</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <span class="detail-label">微信</span>
+                                <span class="detail-value">群里查找</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">QQ</span>
+                                <span class="detail-value">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact 6 -->
+                    <div class="profile-rectangle">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <img src="./downloads/profile/zhaoPingZhong.jpeg" alt="Staff 6" class="clickable-avatar" data-qr="./downloads/profile/unknownQR.jpeg">
+                            </div>
+                            <div class="profile-title">
+                                <h3>等等</h3>
+                                <div class="profile-tags">
+                                    <span class="tag shiTu">等等</span>
+                                    <span class="tag">等等</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <span class="detail-label">微信</span>
+                                <span class="detail-value">群里查找</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">QQ</span>
+                                <span class="detail-value">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact 7 -->
+                    <div class="profile-rectangle">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <img src="./downloads/profile/zhaoPingZhong.jpeg" alt="Staff 7" class="clickable-avatar" data-qr="./downloads/profile/unknownQR.jpeg">
+                            </div>
+                            <div class="profile-title">
+                                <h3>等等</h3>
+                                <div class="profile-tags">
+                                    <span class="tag tuiGuang">等等</span>
+                                    <span class="tag">等等</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <span class="detail-label">微信</span>
+                                <span class="detail-value">群里查找</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">QQ</span>
+                                <span class="detail-value">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact 8 -->
+                    <div class="profile-rectangle">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <img src="./downloads/profile/zhaoPingZhong.jpeg" alt="Staff 8" class="clickable-avatar" data-qr="./downloads/profile/unknownQR.jpeg">
+                            </div>
+                            <div class="profile-title">
+                                <h3>等等</h3>
+                                <div class="profile-tags">
+                                    <span class="tag prize">等等</span>
+                                    <span class="tag">等等</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <span class="detail-label">微信</span>
+                                <span class="detail-value">群里查找</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">QQ</span>
+                                <span class="detail-value">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="zhanlipinzheng" class="tab-content">
+            <div class="section">
+                <h2>战力凭证</h2>
+                <div id="feedback-section">
+                    <div id="auth-message"></div>
+                    <div id="feedback-form" class="feedback-form">
+                        <textarea id="feedback-content" rows="4" placeholder="请输入您的反馈..." class="feedback-textarea"></textarea>
+                        <button id="submit-feedback" class="button">提交反馈</button>
+                    </div>
+                    <button id="sign-in-button" class="button hidden-button">点击登录以提交反馈</button>
+                    <div id="feedback-list" class="feedback-list">
+                    </div>
+                </div>
+                <div class="message-form">
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <label for="username">游戏昵称: <span class="required-asterisk">*</span></label>
+                            <input type="text" id="username" name="username" maxlength="20" required
+                                   oninput="this.value = this.value.slice(0, 20)"
+                                   title="游戏昵称不能超过20个字符">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="imageUpload1">上传战力截图 (可选): <span class="required-asterisk">*</span></label>
+                            <input type="file" id="imageUpload1" name="imageUpload1" accept="image/*">
+                            <div id="fileError1" class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="imageUpload2">上传任务截图 (可选): <span class="required-asterisk">*</span></label>
+                            <input type="file" id="imageUpload2" name="imageUpload2" accept="image/*">
+                            <div id="fileError2" class="error-message"></div>
+                        </div>
+                        <button type="submit">提交</button>
+                    </form>
+                </div>
+                <div class="messages-container">
+                    <div id="messagesList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        &copy; 2025 烟雨弹弹堂新人社区 · 快乐游戏每一天 🎯<br>
+        页面由 <strong>开心病毒</strong> 随心制作
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Supabase Client Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <!-- Your Supabase configuration -->
+    <script src="config.js"></script>
+    <script src="lottery.js"></script>
+    <script>
+        // Function to show contact tab and scroll to newbie section
+        function showNewbieContact() {
+            showTab('contact');
+            document.getElementById('contact-newbie').scrollIntoView({behavior: 'smooth'});
+        }
+
+        // Tab switching function
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-button');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Handle WB navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            const wbNavLinks = document.querySelectorAll('[data-wb-target]');
+            
+            wbNavLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('data-wb-target');
+                    if (targetId) {
+                        const element = document.getElementById(targetId);
+                        if (element) {
+                            // Show the recharge tab if it's not active
+                            const rechargeTab = document.getElementById('recharge');
+                            if (!rechargeTab.classList.contains('active')) {
+                                showTab('recharge');
+                                // Small delay to ensure tab is visible before scrolling
+                                setTimeout(() => {
+                                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }, 100);
+                            } else {
+                                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }
+                        }
+                    }
+                });
+            });
+        });
+
+        // Handle arrow visibility based on scroll position
+        const tabs = document.querySelector('.tabs');
+        const leftArrow = document.getElementById('leftArrow');
+        const rightArrow = document.querySelector('.right-arrow');
+        
+        function updateArrowVisibility() {
+            if (window.innerWidth < 768) {
+                leftArrow.style.display = 'none';
+                rightArrow.style.display = 'none';
+                return;
+            }
+            
+            // Check if we're at the start
+            if (tabs.scrollLeft <= 10) {
+                leftArrow.style.display = 'none';
+            } else {
+                leftArrow.style.display = 'flex';
+            }
+            
+            // Check if we're at the end
+            if (tabs.scrollLeft + tabs.clientWidth >= tabs.scrollWidth - 10) {
+                rightArrow.style.display = 'none';
+            } else {
+                rightArrow.style.display = 'flex';
+            }
+        }
+        
+        // Add scroll event listener
+        tabs.addEventListener('scroll', updateArrowVisibility);
+        
+        // Handle window resize
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(updateArrowVisibility, 100);
+        });
+        
+        // Initial check
+        updateArrowVisibility();
+        
+        // Make arrows clickable
+        leftArrow.style.pointerEvents = 'auto';
+        rightArrow.style.pointerEvents = 'auto';
+        
+        // Add click handlers for smooth scrolling
+        function scrollToPosition(position) {
+            tabs.scrollTo({
+                left: position,
+                behavior: 'smooth'
+            });
+        }
+
+        leftArrow.addEventListener('click', () => {
+            const scrollAmount = Math.max(0, tabs.scrollLeft - 200);
+            scrollToPosition(scrollAmount);
+        });
+        
+        rightArrow.addEventListener('click', () => {
+            const maxScroll = tabs.scrollWidth - tabs.clientWidth;
+            const scrollAmount = Math.min(maxScroll, tabs.scrollLeft + 200);
+            scrollToPosition(scrollAmount);
+        });
+        
+        // Update scrollbar position when clicking arrows
+        tabs.addEventListener('scroll', updateArrowVisibility, { passive: true });
+        
+        // Image modal functionality
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.querySelector('.close-modal');
+        
+        // Add click handlers for group images
+        document.querySelectorAll('.tag').forEach(tag => {
+            tag.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const groupContainer = this.closest('.contact-group');
+                if (groupContainer) {
+                    const img = groupContainer.querySelector('img');
+                    if (img) {
+                        showImageInModal(img.src, img.alt);
+                    }
+                }
+            });
+        });
+        
+        // Make message images clickable
+        document.addEventListener('click', function(e) {
+            const img = e.target.closest('.clickable-image');
+            if (img) {
+                const imgSrc = img.getAttribute('data-src') || img.src;
+                showImageInModal(imgSrc, img.alt || 'Message image');
+            }
+        });
+        
+        // Make group images clickable as well
+        document.querySelectorAll('.contact-group img').forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', function() {
+                showImageInModal(this.src, this.alt);
+            });
+        });
+
+        // Function to show modal with smooth transition
+        function showModal() {
+            modal.style.display = 'flex';
+            // Trigger reflow
+            void modal.offsetWidth;
+            modal.classList.add('show');
+            // Prevent body scroll when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Function to hide modal with smooth transition
+        function hideModal() {
+            modal.classList.remove('show');
+            // Wait for transition to complete before hiding
+            setTimeout(() => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+
+        // Function to handle image display in modal
+        function showImageInModal(imgSrc, altText = '') {
+            modalImg.src = imgSrc;
+            modalImg.alt = altText;
+            showModal();
+        }
+
+        // Smooth scroll to issue without changing URL
+        function scrollToIssue(issueId) {
+            const element = document.getElementById(issueId);
+            if (element) {
+                // Temporarily add highlight class
+                element.classList.add('highlight');
+                // Remove highlight after animation
+                setTimeout(() => element.classList.remove('highlight'), 1500);
+                // Smooth scroll to element
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // Function to handle smooth scrolling for recharge navigation
+        function scrollToRecharge(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                // Show the recharge tab if it's not active
+                const rechargeTab = document.getElementById('recharge');
+                if (!rechargeTab.classList.contains('active')) {
+                    showTab('recharge');
+                    // Small delay to ensure tab is visible before scrolling
+                    setTimeout(() => {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                } else {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        }
+
+
+        // Search functionality for navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('navSearch');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Add click event to all nav links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const issueId = this.getAttribute('data-issue');
+                    if (issueId) {
+                        scrollToIssue(issueId);
+                    }
+                });
+            });
+
+            // Add input event for search
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase();
+                    navLinks.forEach(link => {
+                        const text = link.textContent.toLowerCase();
+                        if (text.includes(searchTerm)) {
+                            link.style.display = 'inline-flex';
+                        } else {
+                            link.style.display = 'none';
+                        }
+                    });
+                });
+                
+                // Focus the search input when question tab is shown
+                const questionTab = document.querySelector('[onclick="showTab(\'question\')"]');
+                if (questionTab) {
+                    questionTab.addEventListener('click', function() {
+                        const tabContent = document.getElementById('question');
+                        if (tabContent) {
+                            // Scroll to the top of the tab content
+                            tabContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            // Focus the search input after a small delay
+                            setTimeout(() => {
+                                searchInput.focus();
+                            }, 100);
+                        }
+                    });
+                }
+            }
+        });
+
+        // Make scan QR text clickable
+        const scanQrElements = document.querySelectorAll('.scan-qr');
+        scanQrElements.forEach(element => {
+            element.addEventListener('click', function() {
+                const imgSrc = this.getAttribute('data-img');
+                if (imgSrc) {
+                    showImageInModal(imgSrc, 'Scan QR Code');
+                }
+            });
+        });
+
+        // Add event listeners for recharge navigation
+        const rechargeNavLinks = document.querySelectorAll('#recharge .nav-link');
+        const rechargeSearchInput = document.getElementById('recharge').querySelector('.search-input');
+        
+        if (rechargeNavLinks.length > 0) {
+            // Add click event to all recharge nav links
+            rechargeNavLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const issueId = this.getAttribute('data-recharge');
+                    if (issueId) {
+                        scrollToRecharge(issueId);
+                    }
+                });
+            });
+
+            // Add input event for recharge search
+            if (rechargeSearchInput) {
+                rechargeSearchInput.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase();
+                    rechargeNavLinks.forEach(link => {
+                        const text = link.textContent.toLowerCase();
+                        if (text.includes(searchTerm)) {
+                            link.style.display = 'inline-flex';
+                        } else {
+                            link.style.display = 'none';
+                        }
+                    });
+                });
+                
+                // Focus the search input when recharge tab is shown
+                const rechargeTab = document.querySelector('[onclick*="recharge"]');
+                if (rechargeTab) {
+                    rechargeTab.addEventListener('click', function() {
+                        const tabContent = document.getElementById('recharge');
+                        if (tabContent) {
+                            // Scroll to the top of the tab content
+                            tabContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            // Focus the search input after a small delay
+                            setTimeout(() => {
+                                if (rechargeSearchInput) rechargeSearchInput.focus();
+                            }, 100);
+                        }
+                    });
+                }
+            }
+        }
+
+        // Make profile avatars clickable to show WeChat QR
+        const profileAvatars = document.querySelectorAll('.clickable-avatar');
+        profileAvatars.forEach(avatar => {
+            avatar.style.cursor = 'pointer';
+            avatar.addEventListener('click', function() {
+                const qrSrc = this.getAttribute('data-qr');
+                if (qrSrc) {
+                    showImageInModal(qrSrc, 'WeChat QR Code');
+                }
+            });
+        });
+
+        // Get all group images and add click event
+        const groupImages = document.querySelectorAll(`
+            .profile-avatar img[src*="wbWcGroup"], 
+            .profile-avatar img[src*="qqGroup"], 
+            a[href*="scriptHelper2.jpeg"], 
+            a[href*="systemLanguage.jpeg"], 
+            a[href*="clearCache.jpeg"], 
+            a[href*="issue2answer1.jpeg"], 
+            a[href*="issue3answer1.jpeg"], 
+            a[href*="issue4answer1.jpeg"], 
+            a[href*="issue4answer2.jpeg"],
+            a[href*="pvp2vs2list.jpeg"],
+            a[href*="wbTopUp.jpeg"],
+            .issue-image,
+            .recharge-image,
+            .account-image
+        `);
+        
+        // Make recharge images clickable
+        const rechargeImages = document.querySelectorAll('.recharge-image');
+        rechargeImages.forEach(img => {
+            img.style.cursor = 'zoom-in';
+        });
+        groupImages.forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', function(e) {
+                e.preventDefault();
+                const imgSrc = this.getAttribute('src') || this.getAttribute('href');
+                showImageInModal(imgSrc, this.alt);
+            });
+        });
+
+        // Add click event for WeChat ID
+        const wechatId = document.querySelector('.wechat-id');
+        if (wechatId) {
+            wechatId.addEventListener('click', function() {
+                const imgSrc = this.getAttribute('data-img');
+                if (imgSrc) {
+                    showImageInModal(imgSrc, 'WeChat QR Code');
+                }
+            });
+        }
+
+        // Close modal when clicking the close button
+        closeBtn.addEventListener('click', hideModal);
+
+        // Close modal when clicking outside the image or pressing Escape key
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                hideModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && modal.classList.contains('show')) {
+                hideModal();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
